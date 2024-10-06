@@ -14,21 +14,10 @@ output "pri-subnet1-id" {
   value = aws_subnet.pri-subnet1[*].id
 }
 
-output "load-balanncer-arn" {
-  value = aws_lb.load-balancer.arn
-}
+
 
 output "securitygroup" {
   value = aws_security_group.webserver-sg.id
 
 }
 
-output "target-group-arn" {
-  value = aws_lb_target_group.TG.arn
-
-}
-
-output "alb-dns" {
-  value = aws_lb.load-balancer.dns_name
-
-}

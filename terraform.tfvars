@@ -1,9 +1,8 @@
 aws-region        = "us-west-1"
 resource-name     = "demo-aqeel"
 vpc-cidr          = "10.0.0.0/16"
-ec2-ami           = "ami-0d53d72369335a9d6"
-ec2-instance-type = "t2.micro"
-# task-definition-name = "demo-aqeel-task-definition"
+
+task-definition-name = "demo-aqeel-task-definition"
 pub-subnet = [
   {
     name              = "demo-aqeel-Public-Subnet-1"

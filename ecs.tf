@@ -86,19 +86,19 @@ resource "aws_ecs_task_definition" "mysql" {
       environment = [
         {
           name  = "MYSQL_ROOT_PASSWORD"
-          value = "aqeel123"
+          value = ""
         },
         {
           name  = "MYSQL_DATABASE"
-          value = "mydb"
+          value = ""
         },
         {
           name  = "MYSQL_USER"
-          value = "aqeel"
+          value = ""
         },
         {
           name  = "MYSQL_PASSWORD"
-          value = "aqeel123"
+          value = ""
         },
       ]
       portMappings = [
@@ -133,15 +133,15 @@ resource "aws_ecs_task_definition" "wordpress" {
         },
         {
           name  = "DB_USER"
-          value = "aqeel"
+          value = ""
         },
         {
           name  = "DB_PASSWORD"
-          value = "aqeel123"
+          value = ""
         },
         {
           name  = "DB_NAME"
-          value = "mydb"
+          value = ""
         },
       ]
       portMappings = [
